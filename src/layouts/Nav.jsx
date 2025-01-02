@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 export default function Nav({ isAuthenticated }) {
-  console.log(isAuthenticated);
   function navLinkStyle({ isActive }) {
     return {
       color: isActive ? "blue" : "",

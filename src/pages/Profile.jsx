@@ -7,7 +7,7 @@ export default function Profile({ setIsAuthenticated }) {
     setIsAuthenticated(false);
   }
   return (
-    <div>
+    <div className="text-center">
       <h1>Profile Page</h1>
       <button className="mt-4" onClick={logout}>
         Logout

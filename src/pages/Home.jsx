@@ -4,7 +4,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <section>
+    <section className="text-center">
       <h1>Home Page</h1>
       <div className="flex items-center justify-center gap-10 mt-14">
         <button onClick={() => navigate("/order-summery")}>

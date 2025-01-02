@@ -1,29 +1,15 @@
-import { Link, useSearchParams } from "react-router-dom";
-
-const products = [
-  {
-    id: 3,
-    name: "Black Jacket",
-    price: "$120",
-    color: "black",
-    category: "featured",
-  },
-  {
-    id: 4,
-    name: "Red Dress",
-    price: "$90",
-    color: "red",
-    category: "featured",
-  },
-];
+import { Link, useLoaderData, useSearchParams } from "react-router-dom";
 
 export default function FeaturedProducts() {
+  const featuredProducts = useLoaderData()?.filter(
+    (product) => product.category === "featured"
+  );
   const [searchParams] = useSearchParams();
   const colorFilter = searchParams.get("color");
 
   const filteredProducts = colorFilter
-    ? products.filter((p) => p.color === colorFilter)
-    : products;
+    ? featuredProducts.filter((p) => p.color === colorFilter)
+    : featuredProducts;
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
