@@ -16,8 +16,9 @@ export default function NewProducts() {
       <div className="text-center">
         No products found with the selected color.
       </div>
-    ); // Display a message when no products are found with the selected color.  Replace "No products found with the selected color." with your desired message.  This message should be styled to match the rest of the application.  For example, you could use the "text-gray-600" class from Tailwind CSS to make the message visually appealing.  You can also customize the message based on your specific needs.  For example, you could include a link to the products page with the selected color filter applied.  This will provide a more user-friendly experience.  For example, you could replace the message with a link that says "See all products with {color} color." or "Click here to see all products with {color} color."  Replace {color} with the actual color name.  For example, if the selected color is "red", the message could be
+    );
   }
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {filteredProducts.map((product) => (
