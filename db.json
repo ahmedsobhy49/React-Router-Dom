@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Black Jacket",
+      "price": "$120",
+      "color": "black",
+      "category": "featured"
+    },
+    {
+      "id": 4,
+      "name": "Red Dress",
+      "price": "$90",
+      "color": "red",
+      "category": "featured"
+    },
+    {
+      "id": 1,
+      "name": "White T-Shirt",
+      "price": "$30",
+      "color": "white",
+      "category": "new"
+    },
+    {
+      "id": 2,
+      "name": "Red Hoodie",
+      "price": "$60",
+      "color": "red",
+      "category": "new"
+    }
+  ]
+}
